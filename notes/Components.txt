@@ -1,0 +1,12 @@
+How to use a component
+
+create a component
+
+register it in a module
+
+add an element in an html markup
+
+
+Create Component Using Angular CLI
+
+ng g c course

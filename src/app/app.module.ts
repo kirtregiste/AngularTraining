@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { StarComponent } from './star/star.component';
 import { TitleCasingComponent } from './title-casing/title-casing.component';
 import { TitleCasePipe } from './title-case.pipe';
+import { FavoriteComponent } from './favorite/favorite.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TitleCasePipe } from './title-case.pipe';
     CourseComponent,
     StarComponent,
     TitleCasingComponent,
-    TitleCasePipe
+    TitleCasePipe,
+    FavoriteComponent
   ],
   imports: [
     BrowserModule,

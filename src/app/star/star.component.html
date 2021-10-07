@@ -1,0 +1,15 @@
+<!-- <button class="btn btn-primary">Save</button> -->
+
+<!-- <button (click)="onClick()">
+    <div *ngIf="isFavorite; else elseBlock"><i class="bi bi-star-fill"></i></div>
+    <ng-template #elseBlock><i class="bi bi-star"></i></ng-template>
+</button> -->
+
+<i class="bi"
+[class.bi-star]="!isFavorite"
+[class.bi-star-fill]="isFavorite"
+(click)="onClick()"
+>
+
+
+

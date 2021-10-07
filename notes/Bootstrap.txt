@@ -1,0 +1,16 @@
+
+Install bootstrap and save as dependency in package.json
+npm install bootstrap --save
+
+
+Then add to styles.css
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+For icons
+Install:
+npm i bootstrap-icons
+
+Add to styles.css:
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons';

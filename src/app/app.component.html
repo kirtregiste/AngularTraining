@@ -7,13 +7,31 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<h1>Angular</h1>
+<!-- <h1>Angular</h1> -->
 <!-- <app-favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></app-favorite> -->
 
-<bootstrap-panel>
+<!-- <bootstrap-panel>
     <ng-container class="heading">Heading</ng-container>
     <div class="body">
         <h2>Body</h2>
         <p>Some Content here...</p>
     </div>
-</bootstrap-panel>
+</bootstrap-panel> -->
+
+<!-- <div *ngIf="courses.length > 0; then coursesList else noCourses"></div>
+<ng-template #coursesList>
+    List of Courses
+</ng-template>
+<ng-template #noCourses>
+    No courses yet
+</ng-template> -->
+
+<ul class="nav nav-pills">
+    <li [class].active="viewMode == 'map'"><a (click)="viewMode = 'map'"href="">Map View</a></li>
+    <li [class].active="viewMode == 'list'"><a (click)="viewMode = 'list'"href="">List View</a></li>
+</ul>
+<div [ngSwitch]="viewMode">
+    <div *ngSwitchCase="'map'">Map View Content</div>
+    <div *ngSwitchCase="'list'">List View Content</div>
+    <div *ngSwitchDefault>Otherwise</div>
+</div>

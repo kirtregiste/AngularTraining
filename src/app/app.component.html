@@ -8,7 +8,10 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <!-- <h1>Angular</h1> -->
-<!-- <app-favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></app-favorite> -->
+<!-- <app-favorite 
+  [isFavorite]="post.isFavorite" 
+  (change)="onFavoriteChanged($event)">
+</app-favorite> -->
 
 <!-- <bootstrap-panel>
     <ng-container class="heading">Heading</ng-container>
@@ -35,3 +38,9 @@
     <div *ngSwitchCase="'list'">List View Content</div>
     <div *ngSwitchDefault>Otherwise</div>
 </div>
+
+<app-like
+  [likesCount]="tweet.likesCount"
+  [isLiked]="tweet.isLiked"
+  (change)="onLikedChanged($event)">
+</app-like>

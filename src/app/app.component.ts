@@ -26,9 +26,9 @@ import { FavoriteChangedEventArgs } from './favorite/favorite.component';
 //     console.log("Liked changed: ", eventArgs)
 //   }
 // }
-// export class AppComponent {
-//   viewMode = 'list';
-// }
+export class AppComponent {
+  viewMode = 'list';
+}
 
 // export class AppComponent {
 //   courses = [
@@ -47,19 +47,19 @@ import { FavoriteChangedEventArgs } from './favorite/favorite.component';
 //   }
 // }
 
-export class AppComponent {
-  courses: any;
+// export class AppComponent {
+//   courses: any;
 
-  loadCourses()
-  {
-    this.courses = [
-      { id: 1, name: 'course1'},
-      { id: 2, name: 'course2'},
-      { id: 3, name: 'course3'},
-    ]
-  }
-  trackCourse(index: any, course: any) {
-    course ? course.id : undefined
-  }
+//   loadCourses()
+//   {
+//     this.courses = [
+//       { id: 1, name: 'course1'},
+//       { id: 2, name: 'course2'},
+//       { id: 3, name: 'course3'},
+//     ]
+//   }
+//   trackCourse(index: any, course: any) {
+//     course ? course.id : undefined
+//   }
   
-}
+//}

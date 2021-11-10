@@ -17,7 +17,9 @@ import { InputFormatDirective } from './input-format.directive';
 import { ZippyComponent } from './zippy/zippy.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { UdemyFormComponent } from './udemy-form/udemy-form.component';
-import { SignupFormComponent } from './signup-form/signup-form/signup-form.component';
+import { SignupFormComponent } from './signup-form/signup-form.component';
+import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
+import { NewPasswordFormComponent } from './new-password-form/new-password-form.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { SignupFormComponent } from './signup-form/signup-form/signup-form.compo
     ZippyComponent,
     ContactFormComponent,
     UdemyFormComponent,
-    SignupFormComponent
+    SignupFormComponent,
+    NewCourseFormComponent,
+    NewPasswordFormComponent
   ],
   imports: [
     BrowserModule,

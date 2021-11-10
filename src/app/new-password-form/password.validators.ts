@@ -21,6 +21,14 @@ export class PasswordValidators {
             return {newConfirmShouldMatch: true};
 
         return null;
+
+        // let newPassword = control.get('newPassword');
+        // let confirmPassword = control.get('confirmPassword');
+
+        // if (newPassword?.value !== confirmPassword?.value)
+        //     return {newConfirmShouldMatch: true};
+        // else
+        //     return null;
     }
     
 }

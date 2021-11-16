@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
@@ -22,6 +22,8 @@ import { SignupFormComponent } from './signup-form/signup-form.component';
 import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
 import { NewPasswordFormComponent } from './new-password-form/new-password-form.component';
 import { PostsComponent } from './posts/posts.component';
+import { PostService } from './services/post.service';
+import { AppErrorHandler } from './common/app-error-handler';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { PostsComponent } from './posts/posts.component';
     HttpClientModule 
   ],
   providers: [
-    CoursesService
+    CoursesService,
+    PostService,
+    {provide: ErrorHandler, useClass: AppErrorHandler}
   ],
   bootstrap: [AppComponent]
 })

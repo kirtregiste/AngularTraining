@@ -24,6 +24,7 @@ import { NewPasswordFormComponent } from './new-password-form/new-password-form.
 import { PostsComponent } from './posts/posts.component';
 import { PostService } from './services/post.service';
 import { AppErrorHandler } from './common/app-error-handler';
+import { FollowersComponent } from './followers/followers.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { AppErrorHandler } from './common/app-error-handler';
     SignupFormComponent,
     NewCourseFormComponent,
     NewPasswordFormComponent,
-    PostsComponent
+    PostsComponent,
+    FollowersComponent
   ],
   imports: [
     BrowserModule,

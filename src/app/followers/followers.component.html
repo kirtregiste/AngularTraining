@@ -14,21 +14,27 @@
     </li>
 </ul> -->
 
-<div class="d-flex align-items-center" 
+<!-- <div class="d-flex align-items-center" 
 *ngFor="let follower of followers">
     <div class="flex-shrink-0">
       <img class="avatar" src="{{follower.avatar_url}}" alt="...">
     </div>
     <div class="flex-grow-1 ms-3">
-      <h4>{{ follower.login}}</h4>
-      <a href="{{follower.html_url}}">{{ follower.html_url }}</a>
-    </div>
-  </div>
-
-  <!-- <div class="media" *ngFor="let follower of followers">
-    <img class="avatar" src="{{follower.avatar_url}}"  alt="...">
-    <div class="media-body">
-      <h5 class="mt-0">{{ follower.login}}</h5>
+      <h4 class=>{{ follower.login}}</h4>
       <a href="{{follower.html_url}}">{{ follower.html_url }}</a>
     </div>
   </div> -->
+
+  <div class="media" *ngFor="let follower of followers">
+    <div class="media-left">
+        <a href="">
+        <img class="avatar media-object" src="{{follower.avatar_url}}"  alt="...">
+        </a>
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">
+          <a [routerLink]="['/followers', follower.login]">{{ follower.login}}</a>
+        </h4>
+      <a href="{{follower.html_url}}">{{ follower.html_url }}</a>
+    </div>
+  </div>

@@ -33,7 +33,8 @@
     </div>
     <div class="media-body">
         <h4 class="media-heading">
-          <a [routerLink]="['/followers', follower.login]">{{ follower.login}}</a>
+          <a [routerLink]="['/followers', follower.id, follower.login]">{{ follower.login}}</a>
+          <!-- <button (click)="toConsole(follower)">ShowFollower</button> -->
         </h4>
       <a href="{{follower.html_url}}">{{ follower.html_url }}</a>
     </div>

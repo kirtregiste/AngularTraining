@@ -69,7 +69,7 @@ import { NotFoundError } from './common/not-found-error';
         component: HomeComponent
       },
       {
-        path: 'followers/:username', 
+        path: 'followers/:id/:username', 
         component: GithubProfileComponent
       },
       {
